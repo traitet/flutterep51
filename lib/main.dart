@@ -1,5 +1,7 @@
 import 'package:splashscreen/splashscreen.dart';
 import 'package:flutter/material.dart';
+import './screens/Ep511APage.dart';
+import './screens/Ep511BPage.dart';
 import './screens/Ep501Page.dart';
 import './screens/Ep491Page.dart';
 import './screens/Ep481Page.dart';
@@ -78,7 +80,7 @@ class MyApp extends StatelessWidget {
 //==============================================          
       SplashScreen(
       seconds: 3,
-      navigateAfterSeconds: MyHomePage(title: 'See-Flutter เรียนรู้ไปด้วยกัน EP41-50',),
+      navigateAfterSeconds: MyHomePage(title: 'See-Flutter เรียนรู้ไปด้วยกัน EP51-60',),
       title: Text('Welcome to See-Flutter',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20.0),),
       image: Image.asset('assets/icon/icon.png'),
       backgroundColor: Colors.orange,
@@ -134,6 +136,8 @@ class _MyHomePageState extends State<MyHomePage> {
 //============================================================
 // CREATE BUTTON
 //============================================================
+            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep511BPage()),);},child: Text('EP51-1B - Logic: Edit Menu (Menu Detail)'),),
+            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep511APage()),);},child: Text('EP51-1A - Logic: Edit Menu (Search)'),),
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep501Page()),);},child: Text('EP50-1 - Logic: Search Food Menu using SteamBuilder'),),
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep491Page()),);},child: Text('EP49-1 - Concept: Search Food Menu using SteamBuilder'),),
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep481Page()),);},child: Text('EP48-1 - Logic: Save New food Menu to DB'),),
