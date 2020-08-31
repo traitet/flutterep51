@@ -1,3 +1,4 @@
+import './screens/Ep521Page.dart';
 import 'package:splashscreen/splashscreen.dart';
 import 'package:flutter/material.dart';
 import './screens/Ep511APage.dart';
@@ -136,6 +137,7 @@ class _MyHomePageState extends State<MyHomePage> {
 //============================================================
 // CREATE BUTTON
 //============================================================
+            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep521Page()),);},child: Text('EP52-1 - Concept: Upload Image to Google Cloud Storage'),),
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep511BPage()),);},child: Text('EP51-1B - Logic: Edit Menu (Menu Detail)'),),
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep511APage()),);},child: Text('EP51-1A - Logic: Edit Menu (Search)'),),
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep501Page()),);},child: Text('EP50-1 - Logic: Search Food Menu using SteamBuilder'),),
