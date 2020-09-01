@@ -1,3 +1,6 @@
+import './screens/Ep531APage.dart';
+import './screens/Ep531BPage.dart';
+
 import './screens/Ep521Page.dart';
 import 'package:splashscreen/splashscreen.dart';
 import 'package:flutter/material.dart';
@@ -137,6 +140,8 @@ class _MyHomePageState extends State<MyHomePage> {
 //============================================================
 // CREATE BUTTON
 //============================================================
+            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep531BPage()),);},child: Text('EP53-1B - Logic: Upload Image/Edit (Menu Detail)'),),
+            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep531APage()),);},child: Text('EP53-1A - Logic: Upload Image/Edit (Search)'),),
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep521Page()),);},child: Text('EP52-1 - Concept: Upload Image to Google Cloud Storage'),),
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep511BPage()),);},child: Text('EP51-1B - Logic: Edit Menu (Menu Detail)'),),
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep511APage()),);},child: Text('EP51-1A - Logic: Edit Menu (Search)'),),

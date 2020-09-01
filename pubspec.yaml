@@ -43,6 +43,14 @@ dependencies:
   cloud_firestore: ^0.13.3
   # firebase_database: ^4.0.0   
   # firebase_core: ^0.5.0
+  # ============================================================
+  # FIREBASE STORAGE: EP53 (CANNOT USE 4.0.0 due to incompatible with firebase_auth)
+  # ============================================================ 
+  firebase_storage: ^3.1.6  
+  # ============================================================
+  # IMAGE PICKER: EP53
+  # ============================================================  
+  image_picker: ^0.6.7+7    
 
 dev_dependencies:
   flutter_test:
