@@ -1,3 +1,4 @@
+import './screens/Ep541Page.dart';
 import './screens/Ep531APage.dart';
 import './screens/Ep531BPage.dart';
 
@@ -140,6 +141,7 @@ class _MyHomePageState extends State<MyHomePage> {
 //============================================================
 // CREATE BUTTON
 //============================================================
+            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep541Page()),);},child: Text('EP54-1 - Logic: Search Menu by Category'),),
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep531BPage()),);},child: Text('EP53-1B - Logic: Upload Image/Edit (Menu Detail)'),),
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep531APage()),);},child: Text('EP53-1A - Logic: Upload Image/Edit (Search)'),),
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep521Page()),);},child: Text('EP52-1 - Concept: Upload Image to Google Cloud Storage'),),
