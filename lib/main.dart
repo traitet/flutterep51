@@ -1,9 +1,8 @@
+import './screens/Ep561Page.dart';
 import './screens/Ep551Page.dart';
-
 import './screens/Ep541Page.dart';
 import './screens/Ep531APage.dart';
 import './screens/Ep531BPage.dart';
-
 import './screens/Ep521Page.dart';
 import 'package:splashscreen/splashscreen.dart';
 import 'package:flutter/material.dart';
@@ -143,6 +142,7 @@ class _MyHomePageState extends State<MyHomePage> {
 //============================================================
 // CREATE BUTTON
 //============================================================
+            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep561Page()),);},child: Text('EP56-1 - Logic: Add Order/Count order items '),),
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep551Page()),);},child: Text('EP55-1 - Logic: Add Order'),),
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep541Page()),);},child: Text('EP54-1 - Logic: Search Menu by Category'),),
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep531BPage()),);},child: Text('EP53-1B - Logic: Upload Image/Edit (Menu Detail)'),),
