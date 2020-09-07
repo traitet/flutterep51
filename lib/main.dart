@@ -1,3 +1,6 @@
+import 'package:flutterep11/screens/Ep591Page.dart';
+import 'package:flutterep11/screens/Ep592Page.dart';
+
 import './screens/Ep582Page.dart';
 import './screens/Ep581Page.dart';
 import './screens/Ep571Page.dart';
@@ -145,6 +148,8 @@ class _MyHomePageState extends State<MyHomePage> {
 //============================================================
 // CREATE BUTTON
 //============================================================
+            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep592Page()),);},child: Text('EP59-2 - Logic: Add Order'),),
+            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep591Page(orderNo: 'ORD007')),);},child: Text('EP59-1 - Logic: delete Order Item'),),
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep582Page()),);},child: Text('EP58-2 - Logic: Add Order/ add image Url '),),
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep581Page(orderNo: 'ORD007')),);},child: Text('EP58-1 - Logic: Order Item'),),
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep571Page()),);},child: Text('EP57-1 - Coding UI: Order Item'),),
