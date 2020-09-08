@@ -1,6 +1,7 @@
-import 'package:flutterep11/screens/Ep591Page.dart';
-import 'package:flutterep11/screens/Ep592Page.dart';
-
+import './screens/Ep591Page.dart';
+import './screens/Ep592Page.dart';
+import './screens/Ep601Page.dart';
+import './screens/Ep602Page.dart';
 import './screens/Ep582Page.dart';
 import './screens/Ep581Page.dart';
 import './screens/Ep571Page.dart';
@@ -148,6 +149,8 @@ class _MyHomePageState extends State<MyHomePage> {
 //============================================================
 // CREATE BUTTON
 //============================================================
+            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep602Page()),);},child: Text('EP60-2 - Logic: Edit Order Item'),),
+            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep601Page()),);},child: Text('EP60-1 - Logic: Order Item'),),            
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep592Page()),);},child: Text('EP59-2 - Logic: Add Order'),),
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep591Page(orderNo: 'ORD007')),);},child: Text('EP59-1 - Logic: delete Order Item'),),
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep582Page()),);},child: Text('EP58-2 - Logic: Add Order/ add image Url '),),
